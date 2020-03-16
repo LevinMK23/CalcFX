@@ -19,6 +19,9 @@ public class Controller {
     public void operation(ActionEvent actionEvent) {
         Button button = (Button) actionEvent.getSource();
         o = button.getText();
+        if (o == "C"){
+            input.setText("");
+        }
         left = Double.parseDouble(input.getText());
         input.setText("");
     }
